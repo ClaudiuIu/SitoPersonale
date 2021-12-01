@@ -1,0 +1,31 @@
+Scanner sc=new Scanner(System.in); //per input
+
+
+_-------------------------------------------------------------------
+// da qua parte il case
+
+int scelta=0;
+    do{
+       System.out.println("Scelta");
+       scelta=sc.nextInt();
+       switch (scelta){
+           case 1:
+              
+               break;
+           case 2:
+               
+               break;
+           case 3:
+               
+               break;
+           default:
+       }
+    }while(scelta!=7);
+
+
+_-------------------------------------------------------------------
+//per dichiarare un'array di oggetti
+
+macchina posto[]=new macchina[DIM];
+
+_-------------------------------------------------------------------

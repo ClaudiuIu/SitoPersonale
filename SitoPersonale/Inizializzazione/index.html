@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: rgb(109, 0, 0);
+        }
+
+        .boxtitolo{
+            align-items: center;
+            
+        }
+        
+        
+        .titolo{
+            margin: auto;
+            background-image: linear-gradient(bottom, rgb(177, 20, 9) 0%, rgb(80, 4, 4) 100%);
+            background-image: -o-linear-gradient(bottom, rgb(177, 20, 9) 0%, rgb(80, 4, 4) 100%);
+            background-image: -moz-linear-gradient(bottom, rgb(177, 20, 9) 0%, rgb(80, 4, 4) 100%);
+            background-image: -webkit-linear-gradient(bottom, rgb(177, 20, 9) 0%, rgb(80, 4, 4) 100%);
+            background-image: -ms-linear-gradient(bottom, rgb(177, 20, 9) 0%, rgb(80, 4, 4) 100%);
+            font-size: x-large;
+            border-radius: 25px;
+            border: black;
+            border: 10px;
+            font-size: medium;
+            color: white;
+            background-color: black;
+            text-align: center;
+            padding: 5px;
+            width: 20%;
+        }
+        .displayflex{
+            display: flex;
+        }
+        .spaziovuoto{
+            width: 20%;
+            margin: 5%;
+            line-height: 135%;
+            background-image: linear-gradient(bottom, rgb(0, 0, 0) 0%, rgb(80, 4, 4) 100%);
+            background-image: -o-linear-gradient(bottom, rgb(0, 0, 0) 0%, rgb(80, 4, 4) 100%);
+            background-image: -moz-linear-gradient(bottom, rgb(0, 0, 0) 0%, rgb(80, 4, 4) 100%);
+            background-image: -webkit-linear-gradient(bottom, rgb(0, 0, 0) 0%, rgb(80, 4, 4) 100%);
+            background-image: -ms-linear-gradient(bottom, rgb(0, 0, 0) 0%, rgb(80, 4, 4) 100%);
+            border-radius: 25px;
+            border: black;
+            padding: 1%;
+            border: 10px;
+            line-height: 135%;
+        }
+        .spaziopieno{
+            width: 80%;
+            margin: 5%;
+        }
+        p{
+            font-size =1em                  /*    16px / 16px  = 1em              */
+            line-height:1.125em;            /*    18px  / 16px = 1.125em    */
+            line-height: 135%;
+            background-image: linear-gradient(bottom, rgb(0, 0, 0) 0%, rgb(80, 4, 4) 100%);
+            background-image: -o-linear-gradient(bottom, rgb(0, 0, 0) 0%, rgb(80, 4, 4) 100%);
+            background-image: -moz-linear-gradient(bottom, rgb(0, 0, 0) 0%, rgb(80, 4, 4) 100%);
+            background-image: -webkit-linear-gradient(bottom, rgb(0, 0, 0) 0%, rgb(80, 4, 4) 100%);
+            background-image: -ms-linear-gradient(bottom, rgb(0, 0, 0) 0%, rgb(80, 4, 4) 100%);
+
+            border-radius: 25px;
+            border: black;
+            border: 10px;
+            color: white;
+            text-align: left;
+            padding: 1%;
+        }
+        #myProgress {
+        border-radius: 10px;  
+        margin-top: 2%;
+        width: 100%;
+        height: 30px;
+        position: relative;
+        background-color: #ddd;
+        }
+
+
+        #myBar {
+        border-radius: 10px;
+        background-color: #0c0303;
+        width: 10px;
+        height: 30px;
+        position: absolute;
+        }
+
+    </style>
+    <head>
+
+    </head>
+    <body>
+
+        <script>
+            var c=0;
+            function move() {
+              var elem = document.getElementById("myBar");
+              var width = 0;
+              var id = setInterval(frame, 100);
+
+
+            document.getElementById("cont").innerHTML=c;
+              c=c+1;
+              document.getElementById("cont");
+                if (width == 100) {
+                  clearInterval(id);
+                } else {
+                  width++;
+                  elem.style.width = width + '%';
+                }
+              }
+            }
+        </script>
+
+            <div class="titolo">
+            <h1>Suicidi in italia</h1>
+
+        </div>
+
+
+
+        <div>
+
+        <div class="displayflex">
+            <div class="spaziopieno">
+                <p class="p">Secondo le stime dell’Organizzazione Mondiale della Sanità, 
+                pubblicate ad aprile 2019,
+                tra il 2000 e il 2016, in tutto il mondo,
+                i tasso di suicidi è diminuito del 16% negli uomini e del 20% nelle donne.
+                <br>
+                <br>
+                Le statistiche sui suicidi in Italia 
+                dicono che la Regione nella quale più persone si tolgono la vita in termini assoluti
+                è la Lombardia, che conta 669 casi nel 2017, 
+                seguono l’Emilia Romagna (422) e il Piemonte (338). La Valle D’Aosta (11), invece, è la 
+                regione ne registra di meno. 
+                Guardando, però, ai quozienti di mortalità, ovvero i rapporti fra il numero dei morti 
+                per suicidio e la popolazione totale per Regione, il tasso di suicidi in Italia 
+                più alto è registrato dalla Valle D’Aosta: 1.64 ogni 10mila abitanti. 
+                La Lombardia si attesta a 0,76.
+                <br>
+                <br>
+                Nel 2008, anno in cui cominciano a farsi manifesti gli effetti della crisi 
+                economico-finanziaria, analogamente a quanto osservato in altri 
+                Paesi europei e negli Stati Uniti, anche in Italia la percentuale di suicidi 
+                comincia ad aumentare tra gli uomini nelle classi di età centrali 
+                (tra i 25-30 anni e i 65-69 anni). L’aumento della mortalità per suicidio 
+                tra gli uomini nelle fasce di età centrali prosegue fino al 2012.
+                <br>
+                <br>
+                L’analisi dei tassi età-specifici riferita all’anno 2016 mostra che per gli uomini 
+                il tasso aumenta costantemente raggiungendo un valore di quasi 20 casi ogni 100mila 
+                tra gli anziani di età superiore ai 70 anni.
+                </p>
+            </div>
+
+            <div class="spaziovuoto">
+
+                <div id="myProgress">
+                    
+                    <div id="myBar">
+                    </div>
+
+
+                </div>
+
+                <p id="cont">0</p>
+                <br>
+                <button onclick="move()">Click Me</button>
+                
+            </div>
+        </div>
+
+    </div>
+    </body>
+</html>
