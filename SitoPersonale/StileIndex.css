@@ -35,7 +35,7 @@ h3{
 
 img{
   width: 400px;
-  height: 400px;
+  height: auto;
 }
 p{
   color: white;
@@ -96,8 +96,8 @@ p{
 
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   perspective: 1000px;
 }
 
@@ -135,6 +135,13 @@ p{
   transform: rotateY(180deg);
 }
 
+#divbody{
+    border-top-style: solid;
+    margin: auto;
+    width: 80%;
+    background-color: #ffffff;
+}
+
 #pmenu{
   font: caption;
   height: auto;
@@ -142,17 +149,15 @@ p{
 }
 
 #header{
+  height: auto;
   width: auto;
-  margin-left: 20%;
-  margin-right: 20%;
   text-align: -webkit-center;
   align-items: center;
-  padding: 20%;
-  background-image: -o-linear-gradient(bottom, rgb(231, 143, 71) 0%, rgb(8, 7, 7) 100%);
-  background-image: -moz-linear-gradient(bottom, rgb(231, 143, 71) 0%, rgb(8, 7, 7) 100%);
-  background-image: -webkit-linear-gradient(bottom, rgb(231, 143, 71) 0%, rgb(8, 7, 7) 100%);
-  background-image: -ms-linear-gradient(bottom, rgb(231, 143, 71) 0%, rgb(8, 7, 7) 100%);
-  background-image: linear-gradient(bottom, rgb(231, 143, 71) 0%, rgb(8, 7, 7) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(231, 143, 71) 0%, rgb(78, 45, 37) 100%);
+  background-image: -moz-linear-gradient(bottom, rgb(231, 143, 71) 0%, rgb(78, 45, 37) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgb(231, 143, 71) 0%, rgb(78, 45, 37) 100%);
+  background-image: -ms-linear-gradient(bottom, rgb(231, 143, 71) 0%, rgb(78, 45, 37) 100%);
+  background-image: linear-gradient(bottom, rgb(231, 143, 71) 0%, rgb(78, 45, 37) 100%);
 
   justify-content: center;
   border: rgb(0, 0, 0);
