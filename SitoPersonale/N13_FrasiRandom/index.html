@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+    <title>Tnput in Javascript</title>
+
+</head>
+<body>
+    <p>Tecnologia Responsive</p>
+    <ol>
+        <li>Si ridimensiona allo schermo del device</li>
+        <li>Utilizzato per la navigazione da cellullare</li>
+        <li>Un Must per gli sviluppatori moderni</li>
+        <li>Lezione sugli INPUT con Javascript</li>
+        
+    </ol>
+<div class="container">
+    <form id="frm1" >
+        <label for="soggetto">Prima frase</label>
+        <input id="soggetto" type="text" name="soggetto" value=""><br>
+        <label for="verbo">Seconda frase</label>
+        <input id ="verbo" type="text" name="verbo" value=""><br>
+        <label for="complementooggetto">Terza frase</label>
+        <input id="co" type="text" name="Complemento Oggetto" value=""><br><br>
+       <!-- <input type="submit" value="Submit"> -->
+        
+       </form>
+
+       <button onclick="CreaUnaFrase()">Crea una frase</button>
+
+       <p>Prima frase:</p>
+       <p id="inputsoggetto"></p>
+       <p>Seconda frase:</p>
+       <p id="inputverbo"></p>
+       <p>Terza frase:</p>
+       <p id="inputCO"></p>
+       
+
+       <p>Concatenazione:</p>
+       <p id="out"></p>
+
+
+    </div>
+
+</body>
+</html>
