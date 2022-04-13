@@ -34,6 +34,7 @@
         
         function fattorizzatore(n)
         {
+            let contatorelocale=0;
         let contatore=0;
         let stringaFattori="";
         let fineciclo=n/2;
@@ -42,7 +43,15 @@
             if (n%fattore==0)
             {   stringaFattori=stringaFattori+ fattore+" ";
                 contatore++;
-                totaleFATTORI++;
+                contatorelocale++;
+                
+                
+            }
+            if(contatorelocale==2){
+                
+            }
+            else{
+                totaleFATTORI=contatore;
             }
 
         }
