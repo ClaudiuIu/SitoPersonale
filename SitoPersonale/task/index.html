@@ -9,6 +9,7 @@
     <script>
         let numeromassino=0;
         let massimofattori=0;
+        let massimofattorii=0;
         let totaleFATTORI=0;
         let numeroDellDomanda3=0;
         function inizio(){
@@ -34,7 +35,7 @@
         
         function fattorizzatore(n)
         {
-            let contatorelocale=0;
+        let contatorelocale=0;
         let contatore=0;
         let stringaFattori="";
         let fineciclo=n/2;
@@ -51,7 +52,7 @@
                 
             }
             else{
-                totaleFATTORI=contatore;
+                totaleFATTORI++;
             }
 
         }
@@ -66,25 +67,25 @@
 
     function fattorizzatoreTotali(n)
         {
-        let contatore=0;
+        let contatoree=0;
         let stringaFattori="";
         let fineciclo=n/2;
         for(let fattore=1; fattore<=fineciclo;fattore++)
         {
             if (n%fattore==0)
             {   stringaFattori=stringaFattori+ fattore+" ";
-                contatore++;
+                contatoree++;
                 totaleFATTORI++;
             }
 
         }
-        if (contatore>massimofattori)
+        if (contatoree>massimofattorii)
         {
-            massimofattori=contatore;
+            massimofattorii=contatoree;
             numeroDellDomanda3=n;
         }
         
-        return  contatore;
+        return  contatoree;
     }
     </script>
 </head>
